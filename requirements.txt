@@ -1,0 +1,10 @@
+pandas
+scikit-learn
+numpy
+pymongo
+fo
+folium
+matplotlib
+branca
+python-dotenv
+python-tk

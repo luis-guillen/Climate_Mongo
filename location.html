@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Obtener Ubicación</title>
+</head>
+<body>
+    <h1>Permitir acceso a la ubicación</h1>
+    <button onclick="getLocation()">Obtener Ubicación</button>
+    <p id="location"></p>
+
+    <script>
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+                document.getElementById("location").innerHTML = "Geolocation is not supported by this browser.";
+            }
+        }
+
+        function showPosition(position) {
+            let lat = position.coords.latitude;
+            let lon = position.coords.longitude;
+            window.pywebview.api.send_location(lat, lon);
+        }
+    </script>
+</body>
+</html>
