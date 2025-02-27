@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/GeoClima.iml" filepath="$PROJECT_DIR$/.idea/GeoClima.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Climate_Mongo_v2.0.iml" filepath="$PROJECT_DIR$/.idea/Climate_Mongo_v2.0.iml" />
     </modules>
   </component>
 </project>
